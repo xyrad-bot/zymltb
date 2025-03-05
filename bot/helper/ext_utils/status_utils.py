@@ -180,10 +180,9 @@ def get_readable_message(sid, is_user, page_no=1, status="All", page_step=1):
 
     button = buttons.build_menu(8)
     msg += (
-        "\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        f"<b>CPU</b>: {cpu_percent()}% | "
-        f"<b>FREE</b>: {get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)}\n"
-        f"<b>RAM</b>: {virtual_memory().percent}% | "
-        f"<b>UPTM</b>: {get_readable_time(time() - botStartTime)}"
+        f"<code>CPU</code>: {cpu_percent()}% | "
+        f"<code>FREE</code>: {get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)}\n"
+        f"<code>RAM</code>: {virtual_memory().percent}% | "
+        f"<code>UPTM</code>: {get_readable_time(time() - botStartTime)}"
     )
     return msg, button
