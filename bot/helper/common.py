@@ -271,7 +271,7 @@ class TaskConfig:
                             self.upDest, ChatAction.TYPING
                         )
                     except:
-                        raise ValueError("Start the bot and try again!")
+                        raise ValueError("Start me in a private chat and try again!")
             elif self.userTransmission and not self.isSuperChat:
                 raise ValueError(
                     "Use SuperGroup incase you want to upload using User session!"

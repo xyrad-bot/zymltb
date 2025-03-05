@@ -97,17 +97,16 @@ async def start(client, message):
     reply_markup = buttons.build_menu(2)
     if await CustomFilters.authorized(client, message):
         start_string = f"""
-Aku sudah aktif selama {get_readable_time(time() - botStartTime)}
-ketik /{BotCommands.HelpCommand} untuk membuka bantuan selengkapnya
+I have been active for {get_readable_time(time() - botStartTime)}.
+Type /{BotCommands.HelpCommand} to open full help.
 """
         await sendMessage(message, start_string, reply_markup)
     else:
         await sendMessage(
             message,
-            "Hi❓, sayangnya kamu gapunya otoritas untuk memanggilku di pm, makasih ",
+            "Done, now go back to @zyradaexleech and do your task!",
             reply_markup,
         )
-
 
 async def restart(_, message):
     restart_message = await sendMessage(message, "Restarting...")

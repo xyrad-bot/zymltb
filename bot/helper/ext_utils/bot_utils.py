@@ -99,71 +99,71 @@ async def set_commands(client):
     await client.set_bot_commands([
         BotCommand(
             f"{BotCommands.StartCommand}",
-            "Mulai bot dan dapatkan informasi dasar."
+            "Start the bot and get basic information."
         ),
         BotCommand(
             f"{BotCommands.MirrorCommand[0]}",
-            "atau /m Mulai mirror link dan file ke cloud."
+            "or /m Start mirroring links and files to the cloud."
         ),
         BotCommand(
             f"{BotCommands.QbMirrorCommand[0]}",
-            "atau /qbm Mulai mirror link dengan qBittorrent."
+            "or /qbm Start mirroring links using qBittorrent."
         ),
         BotCommand(
             f"{BotCommands.YtdlCommand[0]}",
-            "atau /ytm Mirror link yang didukung yt-dlp."
+            "or /ytm Mirror links supported by yt-dlp."
         ),
         BotCommand(
             f"{BotCommands.LeechCommand[0]}",
-            "atau /l Mulai leech link dan file ke Telegram."
+            "or /l Start leeching links and files to Telegram."
         ),
         BotCommand(
             f"{BotCommands.QbLeechCommand[0]}",
-            "atau /qbl Mulai leech link dengan qBittorrent."
+            "or /qbl Start leeching links using qBittorrent."
         ),
         BotCommand(
             f"{BotCommands.YtdlLeechCommand[0]}",
-            "atau /ytl Leech link yang didukung yt-dlp."
+            "or /ytl Leech links supported by yt-dlp."
         ),
         BotCommand(
             f"{BotCommands.CloneCommand[0]}",
-            "Salin file atau folder ke Google Drive."
+            "Clone files or folders to Google Drive."
         ),
         BotCommand(
             f"{BotCommands.CountCommand}",
-            "[URL drive]: Hitung file atau folder di Google Drive."
+            "[Drive URL]: Count files or folders in Google Drive."
         ),
         BotCommand(
             f"{BotCommands.StatusCommand}",
-            "Dapatkan status semua tugas."
+            "Get the status of all tasks."
         ),
         BotCommand(
             f"{BotCommands.StatsCommand}",
-            "Periksa statistik bot."
+            "Check bot statistics."
         ),
         BotCommand(
             f"{BotCommands.CancelTaskCommand[0]}",
-            "Batalkan tugas."
+            "Cancel a task."
         ),
         BotCommand(
             f"{BotCommands.CancelAllCommand}",
-            "Batalkan semua tugas yang ditambahkan oleh Anda."
+            "Cancel all tasks added by you."
         ),
         BotCommand(
             f"{BotCommands.ListCommand}",
-            "Cari sesuatu di Google Drive."
+            "Search for something in Google Drive."
         ),
         BotCommand(
             f"{BotCommands.SearchCommand}",
-            "Cari sesuatu di situs torrent."
+            "Search for something on torrent sites."
         ),
         BotCommand(
             f"{BotCommands.UserSetCommand[0]}",
-            "Pengaturan pengguna."
+            "User settings."
         ),
         BotCommand(
             f"{BotCommands.HelpCommand}",
-            "Dapatkan bantuan lengkap."
+            "Get full help."
         ),
     ])
 
