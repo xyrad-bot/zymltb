@@ -134,10 +134,12 @@ async def status_pages(_, query):
 DL: {tasks['Download']} | UP: {tasks['Upload']} | SD: {tasks['Seed']} | AR: {tasks['Archive']}
 EX: {tasks['Extract']} | SP: {tasks['Split']} | QD: {tasks['QueueDl']} | QU: {tasks['QueueUp']}
 CL: {tasks['Clone']} | CH: {tasks['CheckUp']} | PA: {tasks['Pause']} | SV: {tasks['SamVid']}
+
 Speeds
 DL Speed: {get_readable_file_size(dl_speed)}/s
 UP Speed: {get_readable_file_size(up_speed)}/s
 SD Speed: {get_readable_file_size(seed_speed)}/s
+
 Bandwidth Usage
 Total: {get_readable_file_size(net_io_counters().bytes_sent + net_io_counters().bytes_recv)}
 """
