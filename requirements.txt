@@ -21,7 +21,7 @@ natsort
 pillow
 psutil
 pymongo
-pyrofork==2.2.11
+pyrogram
 python-dotenv
 python-magic
 qbittorrent-api
